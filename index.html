@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         var a =5;
+//         var b=10;
+
+//         var suma=a+b;
+//         document.write( "Wynik:",suma,"<br>");
+//         var roznica=a-b;
+//         document.write("Wynik:", roznica,"<br>" );
+//         var mnoz=a*b;
+//         document.write( "Wynik:",mnoz,"<br>");
+//         var dziel=a/b
+//         document.write( "Wynik:",dziel,"<br>");
+//         // 2
+//         var jeden='siema';
+//         var dwa=2;
+//         var trzy=false;
+//         var cztery=null;
+// document.write("<br>",jeden,"<br>" ,dwa,"<br>" ,trzy,"<br>" ,cztery)
+
+// // 3
+// document.write("<ul>",    "<li>",a,"</li>", "<li>",jeden,"</li>", "<li>",dwa,"</li>", "<li>",trzy,"</li>", "<li>",cztery,"</li>",       "</ul>"   )
+
+// // 4
+// var e=6;
+// var k=2
+// var f=Math.pow(e,k)
+// document.write("<br>",f)
+
+// // 5
+// var dzies=12;
+// var osem=037;
+// var szes=0xACB;
+// var nota=0.12-2;
+// var dd=12.2;
+// document.write("<br>","<br>",dzies,"<br>" ,osem,"<br>" ,szes,"<br>" ,nota,"<br>",dd,)
+
+// // 6
+// var h=4
+// var j=5
+// var wynik=4*5;
+// document.write("<br>","<br>","Mnożenie:",wynik,"<br>","Dzielenie:",wynik/j,)
+
+function sumaLiczbParzystych(tablica) {
+  let suma = 0;
+  
+  for (let i = 0; i <= tablica.length; i++) {
+    if (tablica[i] % 2 == 0) {
+      suma += tablica[i];
+    }
+  }
+  
+  return suma;
+}
+
+const liczby = [1, 2, 3, 4, 5, 6, 7, 8];
+const wynik = sumaLiczbParzystych(liczby);
+document.write(`Suma liczb parzystych: ` + wynik);
+    </script>
+</body>
+</html>
